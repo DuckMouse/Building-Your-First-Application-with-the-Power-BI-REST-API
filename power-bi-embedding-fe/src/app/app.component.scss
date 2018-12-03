@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe WP Light',
+      'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+  }
+  
+  .header {
+    position: absolute;
+    box-shadow: 1px 2px 2px #888888;
+    background-color: #fefefe;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  
+  .side-nav-container {
+    width: 350px;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    bottom: 0;
+    background-color: #f96816;
+    box-shadow: 1px 2px 5px #616161;
+    ul {
+      list-style: none;
+      width: 100%;
+      padding-left: 0;
+      li {
+        margin: 6px 0;
+        height: 48px;
+        button {
+          width: 100%;
+          border: none;
+          height: 48px;
+          text-align: left;
+        }
+      }
+    }
+  
+    mat-sidenav {
+      width: 100%;
+      cursor: pointer;
+      h3 {
+        margin: 18px 0;
+        color: white;
+        padding-left: 1em;
+      }
+    }
+  }
+  
+  .content {
+    position: absolute;
+    top: 64px;
+    left: 350px;
+    margin: 1em;
+    height: 85%;
+    width: 72%;
+  }
+  
+  .loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  #reportContainer {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #dashboardContainer {
+    height: 920px;
+    width: 100%;
+    max-width: 1320px;
+  }
+  
+  #dashboardContainer iframe {
+    border: none;
+  }
+  
+  #buttonsWrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  a:hover,
+  a:visited,
+  a:link,
+  a:active {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #buttonsWrapper a {
+    background-color: rgb(36, 169, 225);
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #buttonsWrapper a:hover {
+    font-size: 120%;
+  }
+  
+  #tileContainer {
+    width: 400px;
+    height: 350px;
+  }
+  
+  .infoBox {
+    margin-top: 30px;
+  }
+  
