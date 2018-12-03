@@ -37,5 +37,20 @@ namespace power_bi_embedded_api.Models
             get { return ConfigurationManager.AppSettings["embedUrlBase"]; }
             set { ConfigurationManager.AppSettings["embedUrlBase"] = value; }
         }
+        public string ApplicationId
+        {
+            get { return ConfigurationManager.AppSettings["ApplicationId"]; }
+            set { ConfigurationManager.AppSettings["ApplicationId"] = value; }
+        }
+        public string WorkspaceId
+        {
+            get { return ConfigurationManager.AppSettings["workspaceId"]; }
+            set { ConfigurationManager.AppSettings["workspaceId"] = value; }
+        }
+        public string ReportId
+        {
+            get { return ConfigurationManager.AppSettings["reportId"]; }
+            set { ConfigurationManager.AppSettings["reportId"] = value; }
+        }
     }
 }
