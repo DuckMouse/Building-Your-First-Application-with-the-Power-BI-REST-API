@@ -25,7 +25,7 @@ namespace power_bi_embedded_api.Controllers
             // Authenticate using created credentials
             var authenticationContext = new AuthenticationContext(_powerbiSettings.AuthorityUrl);
             var authenticationResult =
-               await authenticationContext.AcquireTokenAsync(_powerbiSettings.ResourceUrl, "ApplicationId", credential);
+               await authenticationContext.AcquireTokenAsync(_powerbiSettings.ResourceUrl, _powerbiSettings.ApplicationId, credential);
             return authenticationResult;
         }
         private async Task<TokenCredentials> CreateCredentials()
